@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function Hero() {
   return (
-    <section className="bg-primary text-white">
+    <section className="bg-primary text-white relative">
       <div className="container grid grid-cols-1 md:grid-cols-3 min-h-[700px] md:gap-32">
         {/* brand info */}
         <div className="flex flex-col justify-end py-14 md:py-20">
@@ -72,6 +72,11 @@ function Hero() {
           </div>
         </div>
       </div>
+      {/* bg text and white */}
+      <p className="text-center text-[240px] md:text-[220px] lg:text-[250px] xl:text-[350px ] font-bold font-aston absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-[2]">
+        NIKE
+      </p>
+      <div className="w-[500px] h-[500px] bg-white/45 blur-3xl rounded-full absolute top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
     </section>
   );
 }
