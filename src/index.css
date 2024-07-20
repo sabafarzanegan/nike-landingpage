@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "barlow";
+  src: url(./assets/fonts/barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: "aston";
+  src: url(./assets/fonts/aston/AntonSC-Regular.ttf);
+}
+
+@layer utilities {
+  .size-box {
+    @apply w-8 h-8 border border-white text-white flex justify-center items-center hover:text-primary hover:bg-white cursor-pointer duration-300;
+  }
+}
